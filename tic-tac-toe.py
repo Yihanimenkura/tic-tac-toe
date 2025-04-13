@@ -1,5 +1,9 @@
 lis = ["1","2","3","4","5","6","7","8","9"]
 
+print()
+for i in range (3):
+    print ("", board [i*3],"|", board [i*3+1], "|", board [i*3+2],"|")
+
 def draw_the_board(list):
     for i in range(3):
         print (list [i*3],"|",list[i*3+1],"|",list[i*3+2])
@@ -48,6 +52,9 @@ def main():
         if count == 9:
             print("Tie")
             break
+        current_player = "O" if current_player == "X" else "X"
 
 if "__name__" == "__main__":
     main()
+
+#["","","","","","","","",""]
